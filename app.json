@@ -7,6 +7,7 @@
     "pages/space/space",
     "pages/service/service",
     "pages/resource/resource",
+    "pages/question/question",
     "pages/logs/logs"
   ],
   "window":{
