@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="my-list">
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+            <image src="../../images/icon_24.png" mode="aspectFit" />
+            <text>入住申请</text>
+            <image class="icon-right" src="../../images/xiangyou1.png" />
+        </navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+            <image src="../../images/icon_26.png" mode="aspectFit" />
+            <text>物业服务</text>
+            <image class="icon-right" src="../../images/xiangyou1.png" />
+        </navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+            <image src="../../images/icon_28.png" mode="aspectFit" />
+            <text>会议室预定</text>
+            <image class="icon-right" src="../../images/xiangyou1.png" />
+        </navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+            <image src="../../images/icon_30.png" mode="aspectFit" />
+            <text>问题反馈</text>
+            <image class="icon-right" src="../../images/xiangyou1.png" />
+        </navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+            <image src="../../images/icon_32.png" mode="aspectFit" />
+            <text>云资源申请</text>
+            <image class="icon-right" src="../../images/xiangyou1.png" />
+        </navigator>
+	</view>
+</view>

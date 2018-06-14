@@ -1,0 +1,20 @@
+.my-item{
+    border-bottom:1rpx solid #ddd;
+    padding: 20rpx;
+    font-size: 32rpx;
+    position: relative;
+}
+.my-item .icon-right{
+    width: 48rpx;
+    height: 48rpx;
+    position: absolute;
+    right: 10rpx;
+    top: 50%;
+    margin-top:-24rpx;
+}
+.my-item image{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+    vertical-align: -6rpx;
+}
