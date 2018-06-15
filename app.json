@@ -2,13 +2,18 @@
   "pages":[
     "pages/index/index",
     "pages/activity/activity",
+    "pages/activitydetail/activitydetail",
     "pages/conference/conference",
+    "pages/conferencedetail/conferencedetail",
     "pages/my/my",
     "pages/space/space",
+    "pages/spacereserve/spacereserve",
     "pages/service/service",
+    "pages/servicedetail/servicedetail",
     "pages/resource/resource",
     "pages/question/question",
     "pages/property/property",
+    "pages/apply/apply",
     "pages/logs/logs"
   ],
   "window":{
