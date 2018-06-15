@@ -23,40 +23,40 @@
                     <view class="input-item">
                         <text class="input-item-label">联系人</text>
                         <view class="input-item-content">
-                            <input type="text" auto-focus placeholder="请输入您的姓名" />
+                            <input type="text" auto-focus placeholder="请输入您的姓名" bindtap="inputName" />
                         </view>
                     </view>
                     <view class="input-item">
                         <text class="input-item-label">手机号码</text>
                         <view class="input-item-content">
-                            <input type="idcard" placeholder="请输入您的手机号码" maxlength="11" />
+                            <input type="idcard" placeholder="请输入您的手机号码" maxlength="11" bindinput="inputPhone" />
                         </view>
                     </view>
                 </view>
             </view>
         </view>
         <view class="btn-submit">
-            <button class="btn-block btn-orange">确认提交</button>
+            <button class="btn-block btn-orange" bindtap="questionSubmit">确认提交</button>
         </view>
         <view class="question-text">
             <text>如问题无法简单描述清楚</text>
 			<text>可以直接拨打电话</text>
             <text>我们将第一时间为您答疑解惑</text>
-            <view>400-1234-567</view>
+            <view bindtap="callContact" data-phonenumber="400-1234-567">400-1234-567</view>
         </view>
     </view>
     <view class="container-body container-gray" style="display:{{showfootertab==1?'block':'none'}}">
         <view class="tab">
             <view class="tab-nav">
-                <text>123</text>
+                <text wx:for="{{tabnav.tabitem}}" wx:key="{{item.type}}" bindtap="setTab" class="{{showtab==index?'active':''}}" data-tabindex="{{index}}" data-type="{{item.type}}">{{item.text}}</text>
                 <view class="tab-line" style="width:{{100/tabnav.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
             </view>
             <view class="tab-content">
                 <view class="tab-panel">
                     <view class="question-list">
-                        <view class="question-item">
-                            <view class="question-item-q">类型：</view>
-                            <view class="question-item-a">回答</view>
+                        <view class="question-item {{showquestionindex==index?'active':''}}" wx:for="{{questions}}" wx:key="{{item.id}}" bindtap="foldQuestion" data-qindex="{{index}}">
+                            <view class="question-item-q">{{item.q}}类型：{{item.type}}</view>
+                            <view class="question-item-a">{{item.a}}</view>
                         </view>
                     </view>
                 </view>
@@ -64,12 +64,12 @@
         </view>
     </view>
     <view class="footer-tab footer-tab-widthicon">
-        <view class="footer-tab-item">
-            <image src="" mode="aspectFit" />
+        <view class="footer-tab-item {{showfootertab==0?'active':''}}" data-index="0" bindtap="showTab">
+            <image src="../../images/{{showfootertab==0?'xinxifill':'xinxi'}}.png" mode="aspectFit" />
             <text>问题反馈</text>
         </view>
-        <view class="footer-tab-item">
-            <image src="" mode="aspectFit" />
+        <view class="footer-tab-item {{showfootertab==1?'active':''}}" data-index="1" bindtap="showTab">
+            <image src="../../images/{{showfootertab==1?'wenhaofill':'wenhao'}}.png" mode="aspectFit" />
             <text>常见问题</text>
         </view>
     </view>
