@@ -14,6 +14,7 @@
     "pages/question/question",
     "pages/property/property",
     "pages/apply/apply",
+    "pages/myconferencelist/myconferencelist",
     "pages/logs/logs"
   ],
   "window":{
