@@ -8,6 +8,7 @@
     "pages/service/service",
     "pages/resource/resource",
     "pages/question/question",
+    "pages/property/property",
     "pages/logs/logs"
   ],
   "window":{
