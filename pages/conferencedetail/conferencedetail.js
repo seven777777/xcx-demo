@@ -6,7 +6,7 @@ Page({
         currentIndex:1
     },
     onLoad(options) {//加载数据渲染页面
-        console.log(options);
+        console.log('a',options);
         this.setData({
             spacedata:Object.assign({},options,{
                 equipments:options.equipments.split(','),
